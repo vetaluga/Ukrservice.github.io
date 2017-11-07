@@ -60,7 +60,7 @@
         <h2 class="heading text-center">Про Нас</h2>
         <hr>
         <div class="container-advantages">
-            <div class="info-box" data-toggle="modal" data-target="#Modal1"><i class=" fa fa-area-chart fa-5x"><span>Географiя</span></i><br> Бiльше <strong>5000</strong> активних партнерiв <br><br> Налігоджена система логiстики
+            <div class="info-box" data-toggle="modal" data-target="#Modal1"><i class=" fa fa-area-chart fa-5x"><span>Географiя</span></i><br> Бiльше <strong>5000</strong> активних партнерiв <p>Нас знають в будь-якій точці країни</p> Налігоджена система логiстики
                 <p>Доставка товару клієнту в максимально короткі терміни</p>
             </div>
             <div class="info-box" data-toggle="modal" data-target="#Modal2"><i class="fa fa-diamond fa-5x"><span>Можливостi</span></i><br>Власний сертифiкований сервiсний центр
@@ -94,7 +94,7 @@
                         <h2 class="modal-title"><i class=" fa fa-area-chart fa-4x"></i><br>Географiя</h2>
                     </div>
                     <div class="modal-body">
-                        Бiльше <strong>5000</strong> активних партнерiв <br><br> Налігоджена система логiстики
+                        Бiльше <strong>5000</strong> активних партнерiв <p>Нас знають в будь-якій точці країни</p> Налігоджена система логiстики
                         <p>Доставка товару клієнту в максимально короткі терміни</p>
                     </div>
                 </div>
@@ -244,7 +244,7 @@
     <!-- VACANCIES START -->
     <section class="container text-center" id="vacancies">
         <h2 class="heading">Вакансії</h2>
-        <div class="col-sm-9 col-sm-push-3">
+        <div class="col-sm-9">
             <ul class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#desvacancy">HOME</a></li>
                 <li><a data-toggle="tab" href="#desvacancy1">Вакансія 1</a></li>
@@ -324,7 +324,7 @@
             </div>
             <!-- tab-content -->
         </div>
-        <div class="col-sm-3 col-sm-pull-9">
+        <div class="col-sm-3">
             <!-- <button data-toggle="collapse" data-target="#demo">Відправити резюме</button> -->
             <a data-toggle="collapse" data-target="#demo" class="action-link blip-link black text-uppercase">
               <div class="link-content">Відправити резюме</div>
@@ -362,13 +362,13 @@
                     <div class="form-group">
                         <label class="col-sm-2 control-label">ПIП</label>
                         <div class="col-sm-10">
-                            <input class="form-control" type="text" name="name" pattern="\D+" required placeholder="Натисніть тут">
+                            <input class="form-control" type="text" name="name" pattern="\D+" required placeholder="Прізвище ім'я по-батькові">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Кон.тел</label>
                         <div class="col-sm-10">
-                            <input class="form-control" type="text" name="phone" pattern="\+?3?8?\s?[\(]{0,1}0[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\s?\d{2}[-]{0,1}\s?\d{2}" title="Вкажіть мобільний телефон або стаціонарний номер з кодом міста. Наприклад (099) 999-99-99" required placeholder="+38(067) 111-11-11">
+                            <input class="form-control" type="text" name="phone" pattern="\+?3?8?\s?[\(]{0,1}0[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\s?\d{2}[-]{0,1}\s?\d{2}" title="Вкажіть мобільний телефон або стаціонарний номер з кодом міста. Наприклад (099) 999-99-99" required placeholder="+380(67) 111-11-11">
                         </div>
                     </div>
                     <div class="form-group">
@@ -413,16 +413,26 @@
                     <p>E-mail: <span class="e-mail">hrm@ukrservice.biz <br> hrm2@ukrservice.biz</span></p>
                     <br>
                     <p class="contacts"><strong>Тел.+380 (432) 555-345</strong></p>
-                    <p class="contacts"><strong>+380(067) 431-53-56</strong></p>
-                    <p class="contacts"><strong>+380(067) 432-08-61</strong></p>
+                    <p class="contacts"><strong>+380(67) 431-53-56</strong></p>
+                    <p class="contacts"><strong>+380(67) 432-08-61</strong></p>
                     <br>
                     <p>Україна, 21022, м.Вінниця,</p>
                     <p>вул.С.Зулінського, 44в</p>
+                    <ul class="social">
+                      <li><a href="#"><i class="fa fa-vk fa-2x"></i></a></li>
+                      <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+                      <li><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></li>
+                    </ul>
                 </div>
             </div>
             <div class="col-sm-8">
                 <div id="map"></div>
             </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+
+          </div>
         </div>
     </footer>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeF6D9JIKOLW2tExnxlVv7qzKlcqPIIRU&callback=myMap"></script>
