@@ -256,7 +256,7 @@ a, a:hover, a:active{
   border: 1px solid #9e9e9e;
   border-radius: 5px;
   color: #707070;
-  padding: 20px 50px;
+  padding: 15px 0;
   overflow: hidden;
   max-width: 200px;
 }
@@ -332,11 +332,11 @@ a, a:hover, a:active{
 /*FOOTER*/
 #map{
   width:100%;
-  height:500px;
+  height:400px;
 }
 
 footer{
-  background: #262626;
+  background: #464647;
   color: #ffffff;
 }
 
@@ -357,15 +357,26 @@ footer .col-sm-8{
   color: #395293;
 }
 
-.contacts strong{
+.contacts{
   text-decoration: none;
+  cursor: pointer;
 }
 
 .social{
   padding: 0;
-  margin: 0 auto;
+  margin: 20px 0 20px 150px;
   list-style: none;
   display: flex;
   width: 150px;
-  justify-content: space-around;
+  justify-content: flex-start;
+}
+.social li{
+  margin-right: 10px;
+}
+.social li a i{
+  color: #fff;
+}
+
+.social li a:hover i{
+  color: #395293;
 }
