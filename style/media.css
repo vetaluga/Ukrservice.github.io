@@ -10,4 +10,7 @@
     font-size: 1.4rem;
     padding: 8px 0;
   }
+  .flex{
+    flex-direction: row;
+  }
 }

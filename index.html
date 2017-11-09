@@ -247,6 +247,7 @@
     <!-- VACANCIES START -->
     <section class="container text-center" id="vacancies">
         <h2 class="heading">Вакансії</h2>
+        <div class="flex">
         <div class="col-sm-10">
             <ul class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#desvacancy">HOME</a></li>
@@ -327,7 +328,7 @@
             </div>
             <!-- tab-content -->
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 flex-item">
             <!-- <button data-toggle="collapse" data-target="#demo">Відправити резюме</button> -->
             <a data-toggle="collapse" data-target="#demo" class="action-link blip-link black text-uppercase">
               <div class="link-content">Відправити резюме</div>
@@ -343,16 +344,22 @@
                     </div>
                     <div class="form-group">
                         <label for="tel">Конт.тел</label>
-                        <input type="text" name="tel" pattern="\+?3?8?\s?[\(]{0,1}0[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\s?\d{2}[-]{0,1}\s?\d{2}" title="Вкажіть мобільний телефон або стаціонарний номер з кодом міста. Наприклад (099) 999-99-99" required value="+380" placeholder="+38(067) 111-11-11"
-                            class="form-control" id="tel">
+                        <input type="text" name="tel" required value="+380" placeholder="+38(067) 111-11-11"
+                            class="form-control phoneuser" id="tel">
                     </div>
                     <div class="form-group">
                         <label for="email">Електроная адреса</label>
                         <input type="email" name="email" required placeholder="myemail@email.com" class="form-control" id="email">
                     </div>
+                    <div class="form-group">
+                        <label class="control-label">Прикрiпити резюме</label>
+                        <input name="cv-resume" type="file">
+                    </div>
                     <button type="submit" class="btn btn-default">Відправити</button>
                 </form>
             </div>
+
+          </div>
         </div>
     </section>
     <!-- VACANCIES END -->
@@ -371,7 +378,7 @@
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Кон.тел</label>
                         <div class="col-sm-10">
-                            <input class="form-control" type="text" name="phone" pattern="\+?3?8?\s?[\(]{0,1}0[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\s?\d{2}[-]{0,1}\s?\d{2}" title="Вкажіть мобільний телефон або стаціонарний номер з кодом міста. Наприклад (099) 999-99-99" required value="+380" placeholder="+380(67) 111-11-11">
+                            <input class="form-control phoneuser" type="text" name="phone" required value="+380" placeholder="+380(67) 111-11-11">
                         </div>
                     </div>
                     <div class="form-group">
@@ -413,7 +420,15 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="contact-info">
-                    <p>E-mail: <span class="e-mail">hrm@ukrservice.biz <br> hrm2@ukrservice.biz</span></p>
+                    <div class="emails">
+                        <div class="">
+                          <span>E-mail:</span>
+                        </div>
+                        <div class="e-mail">
+                          <span>hrm@ukrservice.biz <br> hrm2@ukrservice.biz</span>
+                        </div>
+                    </div>
+                    <!-- <p>E-mail: <span class="e-mail">hrm@ukrservice.biz <br> hrm2@ukrservice.biz</span></p> -->
                     <br>
                     <span>Телефони:</span>
                     <a class="contacts"><strong>+380 (432) 555-345</strong></a><br>
@@ -439,6 +454,12 @@
         </div>
     </footer>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeF6D9JIKOLW2tExnxlVv7qzKlcqPIIRU&callback=myMap"></script>
+    <script type="text/javascript" src="script/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('.phoneuser').mask('+380(99) 999-99-99');
+      });
+    </script>
 </body>
 
 </html>

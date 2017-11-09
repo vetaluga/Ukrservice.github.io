@@ -336,7 +336,7 @@ a, a:hover, a:active{
 }
 
 footer{
-  background: #464647;
+  background: #395293;
   color: #ffffff;
 }
 
@@ -352,9 +352,22 @@ footer .col-sm-8{
   height: 400px;
   justify-content: center;
 }
-
+.emails{
+  display: flex;
+}
 .e-mail{
-  color: #395293;
+  color: #888;
+  margin-left: 5px;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+.flex-item{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 .contacts{
@@ -373,10 +386,11 @@ footer .col-sm-8{
 .social li{
   margin-right: 10px;
 }
-.social li a i{
+.social li a i,
+.contacts strong{
   color: #fff;
 }
 
 .social li a:hover i{
-  color: #395293;
+  color: #888;
 }
