@@ -383,12 +383,19 @@ footer .col-sm-8{
   width: 150px;
   justify-content: flex-start;
 }
+
+.bg-social{
+  background: #262626;
+}
+
 .social li{
   margin-right: 10px;
 }
-.social li a i,
-.contacts strong{
+.social li a i{
   color: #fff;
+}
+.contacts strong{
+  color: #395293;
 }
 
 .social li a:hover i{
