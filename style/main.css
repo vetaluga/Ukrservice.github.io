@@ -395,9 +395,9 @@ footer .col-sm-8{
   color: #fff;
 }
 .contacts strong{
-  color: #395293;
+  color: #fff;
 }
 
 .social li a:hover i{
-  color: #888;
+  color: #395293;
 }
